@@ -1,1 +1,66 @@
-<h1 id="title">Survey Form</h1>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+  <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" charset="utf-8"></script>
+  <div class="container">
+  <header class="header">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is the form where you can make your order to our printing house.</p>
+  </header>
+
+    <form class="" id="survey-form" action="index.html" method="post">
+    <div class="contacts">
+    <label id="name-label">Name: </label><input id="name" type="text" name="name-label" value="" placeholder="Your Name" required><br>
+    <label id="email-label">E-mail: </label><input id="email" type="email" name="email-label" value="" placeholder="example@domain.com" required><br>
+    </div>
+    <label id="choose-product">What type of product would you like to print: </label>
+    <div class="dropdown">
+    <select id="dropdown" name="product">
+      <option value="">--Please choose an option--</option>
+      <option value="business card">Business card</option>
+      <option value="flyer">Flyer</option>
+      <option value="brochure">Brochure</option>
+      <option value="poster">Poster</option>
+      <option value="sticker">Sticker</option>
+      <option value="other">Other</option>
+    </select><br>
+        <label id="number-label">How many? </label><input id="number" type="number" name="number-label" value="" min="0" max="30" placeholder="Choose a Number" required><br>
+      </div>
+    <div class="radio">
+    <label id="first-order">Is it your first order here? </label><br>
+    <input type="radio" id="new" name="client" value="new" checked>
+    <label for="new">Yes, it is.</label>
+    <input type="radio" id="former" name="client" value="former">
+    <label for="former">No, I've ordered before.</label><br>
+
+    <input type="radio" id="default" name="discount" value="default" checked>
+    <label for="default">I am not a regular customer.</label>
+    <input type="radio" id="member" name="discount" value="member">
+    <label for="member">I have a membership discount.</label>
+    </div>
+
+    <div class="checkbox">
+      <label id="additional">Choose additional services:</label><br>
+      <input type="checkbox" id="memo" name="memo" value="notification">
+      <label for="memo">Get status notifications.</label><br>
+      <input type="checkbox" id="delivery" name="delivery" value="shipment">
+      <label for="delivery">Get delivery.</label><br>
+      <input type="checkbox" id="news" name="news" value="subscribe">
+      <label for="news">Subscribe to our Newsfeed.</label><br>
+    </div>
+    <div class="comments">
+      <label for="comment">Comments:</label><br>
+<textarea id="comment" name="comment" rows="5" cols="33">
+Add your comment here...
+</textarea>
+    </div>
+    <button id="submit" type="submit" name="Submit" value="">Submit
+    </button>
+    </form>
+    </div>
+</body>
+
+</html>
